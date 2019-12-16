@@ -1,0 +1,177 @@
+.root {
+-fx-base: rgb(50, 50, 50);
+-fx-background: rgb(50, 50, 50);
+-fx-control-inner-background:  rgb(50, 50, 50);
+}
+
+.tab {
+-fx-background-color: linear-gradient(to top, -fx-base, derive(-fx-base,30%));
+}
+  
+.menu-bar {
+-fx-background-color: linear-gradient(to bottom, -fx-base, derive(-fx-base,30%));
+}
+
+.tool-bar:horizontal {
+-fx-background-color:
+linear-gradient(to bottom, derive(-fx-base,+50%), derive(-fx-base,-40%), derive(-fx-base,-20%));
+}
+
+.button {
+/*-fx-background-color: transparent;*/
+    -fx-background-radius: 3,5;
+    /*-fx-background-insets: 0,1;*/
+    -fx-effect: dropshadow(three-pass-box,rgb(0,0,0.4),5,0.0,0,1);
+    -fx-text-fill:white;
+    -fx-background-color:  
+        linear-gradient(transparent,#082e99),
+        radial-gradient(center 50% -40%,radius 200%,-fx-base 45%,#11151f 50%);
+
+}
+  
+.button:hover {
+-fx-background-color: -fx-shadow-highlight-color, -fx-outer-border, -fx-inner-border, -fx-body-color;
+-fx-color: -fx-hover-base;
+}
+.combobox
+{
+    -fx-background-color:
+                linear-gradient(to bottom, derive(white,+200%), derive(white,-30%), derive(white,+10%));
+      -fx-background-radius: 20;
+      -fx-background-insets: 0,1;
+      -fx-prompt-text-fill:-fx-base;
+}
+.textarea{
+    
+        -fx-background-color:
+                linear-gradient(to bottom, derive(white,+200%), derive(white,-30%), derive(white,+10%));
+      -fx-background-radius: 20;
+      -fx-background-insets: 0,1;
+      -fx-prompt-text-fill:-fx-base;
+}
+ 
+.table-view {
+-fx-table-cell-border-color:derive(-fx-base,+10%);
+-fx-table-header-border-color:derive(-fx-base,+20%);
+}
+ 
+/*.split-pane:horizontal > * > .split-pane-divider {
+-fx-border-color: transparent -fx-base transparent -fx-base;
+-fx-background-color: transparent, derive(-fx-base,20%);
+-fx-background-insets: 0, 0 1 0 1;
+}*/
+/*.split-pane
+{
+-fx-border-color: transparent -fx-base transparent -fx-base;
+-fx-background-color: -fx-base, derive(-fx-base,20%);
+-fx-background-insets: 0, 1 5 0 1;
+}*/
+
+#but1
+{
+     -fx-background-radius: 20;
+    /*-fx-background-insets: 0,1;*/
+    -fx-effect: dropshadow(three-pass-box,rgb(0,0,0.4),5,0.0,0,1);
+    -fx-text-fill: white;
+    -fx-font-weight:bold;
+    -fx-background-color:  
+        linear-gradient(transparent,#082e99),
+        radial-gradient(center 50% -40%,radius 200%,-fx-base 45%,#11151f 50%);
+    
+}
+#pane
+{
+   /*-fx-background-color: linear-gradient(to bottom, -fx-base, derive(-fx-base,30%));*/
+            -fx-background-color:radial-gradient(center 50% -40%,radius 200%,-fx-base 45%,derive(-fx-base,50%));
+        -fx-effect: dropshadow(three-pass-box,rgb(0,0,0.4),5,0.0,0,1);
+        -fx-border-color: linear-gradient(transparent 98%,#082e99);
+        -fx-border-width: 1.5;
+    
+}
+#pane2
+{
+   /* -fx-background-color: linear-gradient(to bottom, -fx-base, derive(-fx-base,30%));*/
+        -fx-background-color: radial-gradient(center 50% -40%,radius 200%,-fx-base 45%,derive(-fx-base,50%));
+        -fx-effect: dropshadow(three-pass-box,rgb(0,0,0.4),5,0.0,0,1);
+        -fx-border-color: linear-gradient(#082e99,transparent 1%);
+        -fx-border-width: 1.5;
+    
+}
+#pane3
+{
+ -fx-background-color: linear-gradient(to bottom, -fx-base, derive(-fx-base,30%));
+}
+#pane4
+{
+   /* -fx-background-color: linear-gradient(to bottom, -fx-base, derive(-fx-base,30%));
+        -fx-background-color: radial-gradient(center 50% -40%,radius 200%,-fx-base 45%,derive(-fx-base,50%));*/
+        -fx-background-color: transparent, derive(-fx-base,20%);
+        -fx-effect: dropshadow(three-pass-box,rgb(0,0,0.4),5,0.0,0,1);
+        -fx-border-color: linear-gradient(#082e99,transparent 10%,transparent 80%,#082e99);
+        -fx-background-radius: 50px 0px 50px 0px;
+        -fx-border-radius: 50px 0px 50px 0px;
+        -fx-border-width: 1.5;
+    
+}
+ 
+.my-gridpane {
+-fx-background-color: radial-gradient(radius 100%, derive(-fx-base,20%), derive(-fx-base,-20%));
+}
+ 
+.separator-label {
+-fx-text-fill: orange;
+}
+
+.textfield
+{
+    
+      /* -fx-background-color:  
+        linear-gradient(transparent,#082e99),
+        radial-gradient(center 50% -50%,radius 150%,black 55%,derive(white,90%));*/
+      -fx-background-color:
+                linear-gradient(to bottom, derive(white,+200%), derive(white,-30%), derive(white,+10%));
+      -fx-background-radius: 20px 0px 20px 0px;
+      -fx-border-radius: 20px 0px 20px 0px;
+      -fx-background-insets: 0,1;
+      -fx-border-color: linear-gradient(transparent 98%,#082e99);
+      -fx-border-width:  0px 0px 3px 0px;
+      -fx-prompt-text-fill:-fx-base;
+      
+    
+}
+#textfield2
+{
+         -fx-background-color:
+                linear-gradient(to bottom, derive(white,+200%), derive(white,-30%), derive(white,+10%));
+      -fx-background-radius: 20;
+      -fx-background-insets: 0,1;
+      -fx-border-color: linear-gradient(transparent 98%,#082e99);
+      -fx-border-width:  0px 0px 3px 0px;
+      -fx-prompt-text-fill:-fx-base;
+}
+
+#combobox1
+{
+      -fx-background-color:
+                linear-gradient(to bottom, derive(white,+200%), derive(white,-30%), derive(white,+10%));
+      -fx-background-radius: 20px 0px 20px 0px;
+      -fx-border-radius: 20px 0px 20px 0px;
+      -fx-background-insets: 0,1;
+      -fx-border-color: linear-gradient(transparent 98%,#082e99);
+      -fx-border-width:  0px 0px 3px 0px;
+      -fx-prompt-text-fill:-fx-base;
+    
+}
+
+#datepicker
+{
+          -fx-background-color:
+                linear-gradient(to bottom, derive(white,+200%), derive(white,-30%), derive(white,+10%));
+      -fx-background-radius: 20px 0px 20px 0px;
+      -fx-border-radius: 20px 0px 20px 0px;
+      -fx-background-insets: 0,1;
+      -fx-border-color: linear-gradient(transparent 98%,#082e99);
+      -fx-border-width:  0px 0px 3px 0px;
+      -fx-prompt-text-fill:-fx-base;
+    
+}
